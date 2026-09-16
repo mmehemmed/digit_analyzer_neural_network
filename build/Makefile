@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mehemmed/Desktop/raylib_test
+CMAKE_SOURCE_DIR = /home/mehemmed/Desktop/digit_recognizer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mehemmed/Desktop/raylib_test/build
+CMAKE_BINARY_DIR = /home/mehemmed/Desktop/digit_recognizer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehemmed/Desktop/raylib_test/build/CMakeFiles /home/mehemmed/Desktop/raylib_test/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehemmed/Desktop/digit_recognizer/build/CMakeFiles /home/mehemmed/Desktop/digit_recognizer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehemmed/Desktop/raylib_test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mehemmed/Desktop/digit_recognizer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ raylib_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib_test.dir/build.make CMakeFiles/raylib_test.dir/build
 .PHONY : raylib_test/fast
 
+ai.o: ai.c.o
+.PHONY : ai.o
+
+# target to build an object file
+ai.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib_test.dir/build.make CMakeFiles/raylib_test.dir/ai.c.o
+.PHONY : ai.c.o
+
+ai.i: ai.c.i
+.PHONY : ai.i
+
+# target to preprocess a source file
+ai.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib_test.dir/build.make CMakeFiles/raylib_test.dir/ai.c.i
+.PHONY : ai.c.i
+
+ai.s: ai.c.s
+.PHONY : ai.s
+
+# target to generate assembly for a file
+ai.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/raylib_test.dir/build.make CMakeFiles/raylib_test.dir/ai.c.s
+.PHONY : ai.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... raylib_test"
+	@echo "... ai.o"
+	@echo "... ai.i"
+	@echo "... ai.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

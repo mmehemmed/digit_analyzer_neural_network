@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mehemmed/Desktop/raylib_test
+CMAKE_SOURCE_DIR = /home/mehemmed/Desktop/digit_recognizer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mehemmed/Desktop/raylib_test/build
+CMAKE_BINARY_DIR = /home/mehemmed/Desktop/digit_recognizer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raylib_test.dir/depend.make
@@ -70,27 +70,43 @@ include CMakeFiles/raylib_test.dir/progress.make
 include CMakeFiles/raylib_test.dir/flags.make
 
 CMakeFiles/raylib_test.dir/main.c.o: CMakeFiles/raylib_test.dir/flags.make
-CMakeFiles/raylib_test.dir/main.c.o: /home/mehemmed/Desktop/raylib_test/main.c
+CMakeFiles/raylib_test.dir/main.c.o: /home/mehemmed/Desktop/digit_recognizer/main.c
 CMakeFiles/raylib_test.dir/main.c.o: CMakeFiles/raylib_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehemmed/Desktop/raylib_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/raylib_test.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raylib_test.dir/main.c.o -MF CMakeFiles/raylib_test.dir/main.c.o.d -o CMakeFiles/raylib_test.dir/main.c.o -c /home/mehemmed/Desktop/raylib_test/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehemmed/Desktop/digit_recognizer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/raylib_test.dir/main.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raylib_test.dir/main.c.o -MF CMakeFiles/raylib_test.dir/main.c.o.d -o CMakeFiles/raylib_test.dir/main.c.o -c /home/mehemmed/Desktop/digit_recognizer/main.c
 
 CMakeFiles/raylib_test.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/raylib_test.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mehemmed/Desktop/raylib_test/main.c > CMakeFiles/raylib_test.dir/main.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mehemmed/Desktop/digit_recognizer/main.c > CMakeFiles/raylib_test.dir/main.c.i
 
 CMakeFiles/raylib_test.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/raylib_test.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mehemmed/Desktop/raylib_test/main.c -o CMakeFiles/raylib_test.dir/main.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mehemmed/Desktop/digit_recognizer/main.c -o CMakeFiles/raylib_test.dir/main.c.s
+
+CMakeFiles/raylib_test.dir/ai.c.o: CMakeFiles/raylib_test.dir/flags.make
+CMakeFiles/raylib_test.dir/ai.c.o: /home/mehemmed/Desktop/digit_recognizer/ai.c
+CMakeFiles/raylib_test.dir/ai.c.o: CMakeFiles/raylib_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mehemmed/Desktop/digit_recognizer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/raylib_test.dir/ai.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/raylib_test.dir/ai.c.o -MF CMakeFiles/raylib_test.dir/ai.c.o.d -o CMakeFiles/raylib_test.dir/ai.c.o -c /home/mehemmed/Desktop/digit_recognizer/ai.c
+
+CMakeFiles/raylib_test.dir/ai.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/raylib_test.dir/ai.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mehemmed/Desktop/digit_recognizer/ai.c > CMakeFiles/raylib_test.dir/ai.c.i
+
+CMakeFiles/raylib_test.dir/ai.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/raylib_test.dir/ai.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mehemmed/Desktop/digit_recognizer/ai.c -o CMakeFiles/raylib_test.dir/ai.c.s
 
 # Object files for target raylib_test
 raylib_test_OBJECTS = \
-"CMakeFiles/raylib_test.dir/main.c.o"
+"CMakeFiles/raylib_test.dir/main.c.o" \
+"CMakeFiles/raylib_test.dir/ai.c.o"
 
 # External object files for target raylib_test
 raylib_test_EXTERNAL_OBJECTS =
 
 raylib_test: CMakeFiles/raylib_test.dir/main.c.o
+raylib_test: CMakeFiles/raylib_test.dir/ai.c.o
 raylib_test: CMakeFiles/raylib_test.dir/build.make
 raylib_test: /usr/local/lib/libraylib.a
 raylib_test: /usr/lib/x86_64-linux-gnu/libOpenGL.so
@@ -99,7 +115,7 @@ raylib_test: /usr/lib/x86_64-linux-gnu/libGLU.so
 raylib_test: /usr/lib/x86_64-linux-gnu/libX11.so
 raylib_test: /usr/lib/x86_64-linux-gnu/libXext.so
 raylib_test: CMakeFiles/raylib_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mehemmed/Desktop/raylib_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable raylib_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mehemmed/Desktop/digit_recognizer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable raylib_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/raylib_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -111,6 +127,6 @@ CMakeFiles/raylib_test.dir/clean:
 .PHONY : CMakeFiles/raylib_test.dir/clean
 
 CMakeFiles/raylib_test.dir/depend:
-	cd /home/mehemmed/Desktop/raylib_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mehemmed/Desktop/raylib_test /home/mehemmed/Desktop/raylib_test /home/mehemmed/Desktop/raylib_test/build /home/mehemmed/Desktop/raylib_test/build /home/mehemmed/Desktop/raylib_test/build/CMakeFiles/raylib_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mehemmed/Desktop/digit_recognizer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mehemmed/Desktop/digit_recognizer /home/mehemmed/Desktop/digit_recognizer /home/mehemmed/Desktop/digit_recognizer/build /home/mehemmed/Desktop/digit_recognizer/build /home/mehemmed/Desktop/digit_recognizer/build/CMakeFiles/raylib_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/raylib_test.dir/depend
 

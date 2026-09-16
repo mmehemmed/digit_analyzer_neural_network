@@ -112,8 +112,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/mehemmed/Desktop/raylib_test/build",
-		"source" : "/home/mehemmed/Desktop/raylib_test"
+		"build" : "/home/mehemmed/Desktop/digit_recognizer/build",
+		"source" : "/home/mehemmed/Desktop/digit_recognizer"
 	},
 	"version" : 
 	{

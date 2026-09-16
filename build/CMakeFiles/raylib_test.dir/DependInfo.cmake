@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mehemmed/Desktop/raylib_test/main.c" "CMakeFiles/raylib_test.dir/main.c.o" "gcc" "CMakeFiles/raylib_test.dir/main.c.o.d"
+  "/home/mehemmed/Desktop/digit_recognizer/ai.c" "CMakeFiles/raylib_test.dir/ai.c.o" "gcc" "CMakeFiles/raylib_test.dir/ai.c.o.d"
+  "/home/mehemmed/Desktop/digit_recognizer/main.c" "CMakeFiles/raylib_test.dir/main.c.o" "gcc" "CMakeFiles/raylib_test.dir/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

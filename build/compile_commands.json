@@ -1,8 +1,14 @@
 [
 {
-  "directory": "/home/mehemmed/Desktop/raylib_test/build",
-  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP  -g -std=gnu11 -o CMakeFiles/raylib_test.dir/main.c.o -c /home/mehemmed/Desktop/raylib_test/main.c",
-  "file": "/home/mehemmed/Desktop/raylib_test/main.c",
+  "directory": "/home/mehemmed/Desktop/digit_recognizer/build",
+  "command": "/usr/bin/gcc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP  -g -std=gnu11 -o CMakeFiles/raylib_test.dir/main.c.o -c /home/mehemmed/Desktop/digit_recognizer/main.c",
+  "file": "/home/mehemmed/Desktop/digit_recognizer/main.c",
   "output": "CMakeFiles/raylib_test.dir/main.c.o"
+},
+{
+  "directory": "/home/mehemmed/Desktop/digit_recognizer/build",
+  "command": "/usr/bin/gcc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP  -g -std=gnu11 -o CMakeFiles/raylib_test.dir/ai.c.o -c /home/mehemmed/Desktop/digit_recognizer/ai.c",
+  "file": "/home/mehemmed/Desktop/digit_recognizer/ai.c",
+  "output": "CMakeFiles/raylib_test.dir/ai.c.o"
 }
 ]

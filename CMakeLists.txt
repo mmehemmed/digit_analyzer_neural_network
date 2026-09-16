@@ -9,7 +9,7 @@ list(APPEND CMAKE_PREFIX_PATH "/home/mehemmed/Documents")
 # Find raylib installed on the system (e.g., via sudo make install or apt)
 find_package(raylib REQUIRED)
 
-add_executable(raylib_test main.c)
+add_executable(raylib_test main.c ai.c)
 
 # Link raylib and its system dependencies
 target_link_libraries(raylib_test PRIVATE raylib)

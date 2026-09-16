@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/raylib_test.dir/ai.c.o"
+  "CMakeFiles/raylib_test.dir/ai.c.o.d"
   "CMakeFiles/raylib_test.dir/main.c.o"
   "CMakeFiles/raylib_test.dir/main.c.o.d"
   "raylib_test"

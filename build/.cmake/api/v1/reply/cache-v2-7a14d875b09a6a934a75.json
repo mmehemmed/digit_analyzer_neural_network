@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mehemmed/Desktop/raylib_test/build"
+			"value" : "/home/mehemmed/Desktop/digit_recognizer/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -146,6 +146,18 @@
 			"value" : "/usr/bin/ctest"
 		},
 		{
+			"name" : "CMAKE_CXX_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/g++"
+		},
+		{
 			"name" : "CMAKE_C_COMPILER",
 			"properties" : 
 			[
@@ -155,11 +167,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/cc"
+			"value" : "/usr/bin/gcc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -415,7 +427,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mehemmed/Desktop/raylib_test/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/mehemmed/Desktop/digit_recognizer/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -475,7 +487,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mehemmed/Desktop/raylib_test"
+			"value" : "/home/mehemmed/Desktop/digit_recognizer"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1111,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mehemmed/Desktop/raylib_test/build"
+			"value" : "/home/mehemmed/Desktop/digit_recognizer/build"
 		},
 		{
 			"name" : "raylib_test_IS_TOP_LEVEL",
@@ -1135,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mehemmed/Desktop/raylib_test"
+			"value" : "/home/mehemmed/Desktop/digit_recognizer"
 		}
 	],
 	"kind" : "cache",
